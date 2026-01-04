@@ -251,6 +251,11 @@ body {
     margin-bottom: 3rem;
 }
 
+.section-6 .section-content {
+    display: block;
+    width: 100%;
+}
+
 .card {
     background: white;
     border-radius: var(--radius-lg);
@@ -486,13 +491,25 @@ body {
 .code-definition {
     grid-column: 1 / -1;
     margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.code-definition .card {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .code-examples {
     grid-column: 1 / -1;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .example-card {
@@ -500,6 +517,8 @@ body {
     border: 2px solid var(--color-blue);
     border-radius: var(--radius-lg);
     padding: 1.5rem;
+    width: 100%;
+    max-width: 600px;
 }
 
 .example-card h4 {
@@ -536,6 +555,10 @@ body {
     font-weight: 600;
     color: var(--color-dark);
     margin-top: 2rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
 /* ============= VIBE CODING SECTION ============= */
