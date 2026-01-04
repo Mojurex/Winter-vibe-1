@@ -442,6 +442,9 @@ body {
     text-align: left;
     margin-top: 1rem;
     line-height: 1.6;
+    word-break: break-word;
+    white-space: pre-wrap;
+    overflow-x: auto;
 }
 
 .analogy-box {
@@ -498,6 +501,8 @@ body {
     font-size: 0.9rem;
     line-height: 1.6;
     overflow-x: auto;
+    word-break: break-word;
+    white-space: pre-wrap;
     display: block;
 }
 
