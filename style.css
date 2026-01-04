@@ -42,10 +42,11 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, var(--color-pale-pink) 0%, #FFF5FB 100%);
     color: var(--color-text);
-    line-height: 1.6;
+    line-height: 1.7;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-size: 18px;
 }
 
 /* ============= HEADER & NAVIGATION ============= */
@@ -69,7 +70,7 @@ body {
 }
 
 .logo {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 700;
     background: linear-gradient(135deg, var(--color-accent), var(--color-purple));
     -webkit-background-clip: text;
@@ -88,8 +89,8 @@ body {
     color: var(--color-text);
     text-decoration: none;
     font-weight: 500;
-    font-size: 0.9rem;
-    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
     border-radius: var(--radius-md);
     transition: var(--transition);
 }
@@ -220,7 +221,7 @@ body {
 }
 
 .section-title {
-    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-size: clamp(2rem, 5vw, 3.2rem);
     font-weight: 700;
     color: var(--color-dark);
     margin-bottom: 0.5rem;
@@ -245,7 +246,7 @@ body {
 .card {
     background: white;
     border-radius: var(--radius-lg);
-    padding: 2rem;
+    padding: 2.5rem;
     box-shadow: var(--shadow-soft);
     transition: var(--transition);
     border: 1px solid rgba(255, 182, 217, 0.2);
@@ -257,13 +258,13 @@ body {
 }
 
 .card-icon {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 1rem;
     display: block;
 }
 
 .card h3 {
-    font-size: 1.5rem;
+    font-size: 1.65rem;
     color: var(--color-dark);
     margin-bottom: 0.5rem;
 }
@@ -272,6 +273,7 @@ body {
     color: var(--color-text);
     margin-bottom: 1rem;
     line-height: 1.7;
+    font-size: 1.05rem;
 }
 
 /* Reveal Button */
@@ -279,14 +281,14 @@ body {
     background: var(--color-light-pink);
     color: var(--color-accent);
     border: 2px solid var(--color-accent);
-    padding: 0.8rem 1.4rem;
+    padding: 0.9rem 1.6rem;
     border-radius: var(--radius-md);
     cursor: pointer;
     font-weight: 600;
     transition: var(--transition);
-    font-size: 0.95rem;
-    min-height: 44px;
-    min-width: 44px;
+    font-size: 1.05rem;
+    min-height: 48px;
+    min-width: 48px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -391,7 +393,7 @@ body {
 }
 
 .intro-text {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: var(--color-text);
     font-weight: 500;
 }
@@ -408,7 +410,7 @@ body {
     background: linear-gradient(135deg, rgba(255, 182, 217, 0.3), rgba(255, 214, 232, 0.3));
     border: 2px solid rgba(255, 105, 180, 0.2);
     border-radius: var(--radius-lg);
-    padding: 2rem;
+    padding: 2.5rem;
     text-align: center;
     transition: var(--transition);
 }
@@ -420,19 +422,19 @@ body {
 }
 
 .tech-icon {
-    font-size: 4rem;
+    font-size: 4.5rem;
     margin-bottom: 1rem;
     display: block;
 }
 
 .tech-card h3 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: var(--color-dark);
     margin-bottom: 0.5rem;
 }
 
 .tech-acronym {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: var(--color-accent);
     font-weight: 600;
     margin-bottom: 1rem;
@@ -441,10 +443,10 @@ body {
 .code-snippet {
     background: var(--color-dark);
     color: #90EE90;
-    padding: 1rem;
+    padding: 1.2rem;
     border-radius: var(--radius-md);
     font-family: 'Courier New', monospace;
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     text-align: left;
     margin-top: 1rem;
     line-height: 1.6;
@@ -462,13 +464,13 @@ body {
 }
 
 .analogy-box h4 {
-    font-size: 1.5rem;
+    font-size: 1.65rem;
     margin-bottom: 1rem;
     color: var(--color-dark);
 }
 
 .analogy-box p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: var(--color-text);
 }
 
@@ -708,14 +710,14 @@ body {
 }
 
 .flow-icon-large {
-    font-size: 4rem;
+    font-size: 4.5rem;
     margin-bottom: 1rem;
     display: block;
     animation: bounce 2s ease-in-out infinite;
 }
 
 .flow-step-large h4 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: var(--color-dark);
     margin-bottom: 0.5rem;
 }
@@ -723,15 +725,16 @@ body {
 .flow-step-large p {
     color: var(--color-text);
     margin-bottom: 1rem;
+    font-size: 1.1rem;
 }
 
 .code-box {
     background: #1e1e1e;
     color: #90EE90;
-    padding: 1rem;
+    padding: 1.2rem;
     border-radius: var(--radius-md);
     font-family: 'Courier New', monospace;
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     text-align: left;
     line-height: 1.6;
     margin-top: 0.5rem;
@@ -1101,12 +1104,12 @@ body {
 
 @media (max-width: 480px) {
     body {
-        font-size: 15px;
-        line-height: 1.5;
+        font-size: 17px;
+        line-height: 1.6;
     }
 
     .logo {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
 
     .nav-menu {
@@ -1116,15 +1119,15 @@ body {
     }
 
     .nav-link {
-        font-size: 0.75rem;
-        padding: 0.4rem 0.6rem;
-        min-height: 44px;
+        font-size: 0.85rem;
+        padding: 0.5rem 0.7rem;
+        min-height: 48px;
         flex: 1;
         text-align: center;
     }
 
     .section-title {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         line-height: 1.3;
     }
 
@@ -1134,13 +1137,13 @@ body {
     }
 
     .card h3 {
-        font-size: 1.2rem;
-        margin-bottom: 0.7rem;
+        font-size: 1.35rem;
+        margin-bottom: 0.8rem;
     }
 
     .card p {
-        font-size: 0.9rem;
-        line-height: 1.5;
+        font-size: 1rem;
+        line-height: 1.6;
     }
 
     .tech-card {
