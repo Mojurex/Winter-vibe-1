@@ -44,8 +44,8 @@ function generateFlow() {
     // Simple color mapping from Mongolian to CSS
     const colorMap = {
         'цэнхэр': '#70D6FF',
-        'розовуу': '#FFB6D9',
-        'ногооноо': '#90EE90',
+        'цагаан': '#e6dadaff',
+        'ногоон': '#06f406ff',
         'шар': '#FFE66D',
         'улаан': '#FF6B6B',
         'ягаан': '#C77DFF',
