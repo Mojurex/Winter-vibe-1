@@ -198,14 +198,10 @@ body {
 
 /* ============= SECTIONS ============= */
 .section {
-    padding: 4rem 0;
+    padding: 5rem 0;
     scroll-margin-top: 100px;
     opacity: 0;
     animation: fadeInUp 0.8s ease-out forwards;
-}
-
-.section-6 {
-    padding: 3rem 0;
 }
 
 .section:nth-child(1) { animation-delay: 0.1s; }
@@ -217,27 +213,26 @@ body {
 .section-container {
     max-width: 1000px;
     margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.section-6 .section-container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .section-header {
     text-align: center;
-    margin-bottom: 2rem;
-}
-
-.section-6 .section-header {
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 
 .section-title {
-    font-size: clamp(1.8rem, 4.5vw, 2.8rem);
+    font-size: clamp(2rem, 5vw, 3.2rem);
     font-weight: 700;
     color: var(--color-dark);
     margin-bottom: 0.5rem;
-}
-
-.section-6 .section-title {
-    font-size: clamp(1.6rem, 4vw, 2.4rem);
-    margin-bottom: 0.3rem;
 }
 
 /* Section Colors */
@@ -692,9 +687,8 @@ body {
 .flow-intro {
     grid-column: 1 / -1;
     text-align: center;
-    font-size: 1rem;
-    margin-bottom: 0.8rem;
-    color: var(--color-text);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
 }
 
 .flow-animation {
@@ -710,8 +704,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.2rem;
-    margin: 1rem auto 1.5rem;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem auto;
+    width: 100%;
     max-width: 900px;
 }
 
@@ -719,11 +715,13 @@ body {
     background: linear-gradient(135deg, rgba(255, 182, 217, 0.15), rgba(255, 255, 255, 0.95));
     border: 3px solid var(--color-accent);
     border-radius: var(--radius-lg);
-    padding: 2rem 2rem;
+    padding: 3rem 3rem;
     text-align: center;
     width: 100%;
-    max-width: 600px;
-    min-height: 200px;
+    max-width: 750px;
+    min-height: 260px;
+    margin-left: auto;
+    margin-right: auto;
     transition: var(--transition);
     box-shadow: 0 8px 30px rgba(255, 105, 180, 0.15);
     display: flex;
@@ -739,25 +737,25 @@ body {
 }
 
 .flow-icon-large {
-    font-size: 3.5rem;
-    margin-bottom: 0.8rem;
+    font-size: 4.5rem;
+    margin-bottom: 1.2rem;
     display: block;
     animation: bounce 2s ease-in-out infinite;
 }
 
 .flow-step-large h4 {
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     color: var(--color-dark);
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.9rem;
     font-weight: 700;
 }
 
 .flow-step-large p {
     color: var(--color-text);
     margin-bottom: 0;
-    font-size: 1.05rem;
-    line-height: 1.6;
-    max-width: 450px;
+    font-size: 1.2rem;
+    line-height: 1.75;
+    max-width: 550px;
 }
 
 .code-box {
@@ -774,7 +772,7 @@ body {
 
 .flow-line {
     width: 4px;
-    height: 35px;
+    height: 80px;
     background: linear-gradient(180deg, var(--color-accent), var(--color-purple));
     animation: slideDown 1.5s ease-in-out infinite;
     border-radius: 10px;
