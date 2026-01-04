@@ -1,18 +1,11 @@
 {
   "version": 2,
-  "builds": [
+  "buildCommand": "echo 'Build complete'",
+  "outputDirectory": ".",
+  "rewrites": [
     {
-      "src": "index.html",
-      "use": "@vercel/static"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "index.html"
-    }
-  ],
-  "env": {
-    "NODE_ENV": "production"
-  }
+  ]
 }
