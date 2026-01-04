@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe Coding - Хүүхэлдэхүүнд зориулсан сурах цэцэрлэг</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="header-content">
+            <h1 class="logo">🌈 Vibe Coding</h1>
+            <nav class="nav-menu">
+                <a href="#internet" class="nav-link">Интернет</a>
+                <a href="#website" class="nav-link">Web сайт</a>
+                <a href="#frontend" class="nav-link">Frontend</a>
+                <a href="#code" class="nav-link">Code</a>
+                <a href="#vibe" class="nav-link">Vibe Coding</a>
+                <a href="#flow" class="nav-link">Урсгал</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title">Сурч, Үйлсэх, Үүсгэх!</h2>
+            <p class="hero-subtitle">Вэб хөгжүүлэлтийн ертөнцөд тавтай морил</p>
+            <button class="cta-button" onclick="document.getElementById('internet').scrollIntoView({behavior: 'smooth'})">
+                Эхлүүлэх ▼
+            </button>
+        </div>
+        <div class="hero-illustration">
+            <div class="floating-icon">💻</div>
+            <div class="floating-icon" style="animation-delay: 0.5s">📱</div>
+            <div class="floating-icon" style="animation-delay: 1s">🌐</div>
+        </div>
+    </section>
+
+    <main class="main-content">
+        <!-- Section 1: Интернет -->
+        <section id="internet" class="section section-1">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">🌍 Интернет гэж юу вэ?</h2>
+                </div>
+                <div class="section-content">
+                    <div class="card reveal-card">
+                        <div class="card-icon">🌐</div>
+                        <h3>Дэлхийн томоохон сүлжээ</h3>
+                        <p>Интернет нь компьютер, ухаалаг утас, таблет зэргийг хоорондоо холбож байдаг үйлдэл юм. Энэ нь хүмүүстийг дэлхийнхүүс холбоотой болгоход ажилладаг.</p>
+                        <button class="reveal-btn">Дэлгэрэнгүй ▶</button>
+                        <p class="hidden-text" style="display: none;">
+                            Та утсаар сүлжээ ашиглаж байвал интернет ашиглаж байна. Та видео үзэх, сургалтын материал уншах, найзуудтай ярилцах үед интернет ашиглаж байна.
+                        </p>
+                    </div>
+                    <div class="card reveal-card">
+                        <div class="card-icon">🔗</div>
+                        <h3>Бүх зүйл холбогдсон</h3>
+                        <p>Төрөл бүрийн хэрэгслүүд утас, кабель эсвэл радио дамжуулан хоорондоо холбогдож байдаг.</p>
+                        <button class="reveal-btn">Дэлгэрэнгүй ▶</button>
+                        <p class="hidden-text" style="display: none;">
+                            Интернет үнэн дээр маш олон компьютер, сервер нэртэй хэрэгслүүдийн аж ахуйн эргүүлэлт юм. Энэ бүхэн Wi-Fi болон кабель дамжуулан холбогдож байна.
+                        </p>
+                    </div>
+                </div>
+                <div class="illustration-box">
+                    <div class="network-diagram">
+                        <div class="network-node">📱</div>
+                        <div class="network-node">💻</div>
+                        <div class="network-node">🖥️</div>
+                        <div class="network-node">⌨️</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Web сайт -->
+        <section id="website" class="section section-2">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">🌐 Web сайт хэрхэн ажилладаг вэ?</h2>
+                </div>
+                <div class="section-content">
+                    <div class="card reveal-card">
+                        <div class="card-icon">📄</div>
+                        <h3>Файлуудын цуглуулга</h3>
+                        <p>Web сайт нь HTML, CSS, JavaScript файлуудаас тогтоно. Эдгээр файлууд серверт хөмрөх болон компьютер татаж авдаг.</p>
+                        <button class="reveal-btn">Дэлгэрэнгүй ▶</button>
+                        <p class="hidden-text" style="display: none;">
+                            Та сайт нээх үед серверийн компьютер эдгээр файлуудыг таны компьютер, утасруу илгээдэг. Тэгэхэд браузер эдгээр файлуудыг унших болон сайт үзүүлдэг.
+                        </p>
+                    </div>
+                    <div class="card reveal-card">
+                        <div class="card-icon">🔄</div>
+                        <h3>Хүсэлт, хариулт системэ</h3>
+                        <p>Та URL хаягийг оруулах үед: браузер сервер руу "энэ сайтийн файлуудыг надад өгөөч" гэж асууна.</p>
+                        <button class="reveal-btn">Дэлгэрэнгүй ▶</button>
+                        <p class="hidden-text" style="display: none;">
+                            Сервер хариулдаг: "Болоо! Энд файлуудаа аваарай." Тэгэхэд браузер эдгээр файлуудыг цэгцэлэн та үзүүлэх гоёмсог сайтыг үзүүлэдэг.
+                        </p>
+                    </div>
+                </div>
+                <div class="device-mockups">
+                    <div class="mockup">
+                        <div class="phone-frame">
+                            <div class="phone-content">📱</div>
+                        </div>
+                        <p class="mockup-label">Утас</p>
+                    </div>
+                    <div class="mockup">
+                        <div class="tablet-frame">
+                            <div class="tablet-content">⌨️</div>
+                        </div>
+                        <p class="mockup-label">Таблет</p>
+                    </div>
+                    <div class="mockup">
+                        <div class="laptop-frame">
+                            <div class="laptop-content">💻</div>
+                        </div>
+                        <p class="mockup-label">Компьютер</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Frontend -->
+        <section id="frontend" class="section section-3">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">✨ Frontend ойлголт</h2>
+                </div>
+                <div class="section-content">
+                    <div class="frontend-explanation">
+                        <p class="intro-text">Frontend нь та <strong>үзэх болон ашигладаг</strong> хэсэг юм. Энэ нь гурван хэлээр үүсэж байна:</p>
+                    </div>
+                    
+                    <div class="frontend-trio">
+                        <div class="tech-card">
+                            <div class="tech-icon">📝</div>
+                            <h3>HTML</h3>
+                            <p class="tech-acronym">HyperText Markup Language</p>
+                            <p>Энэ нь байшингийн <strong>хүрээ</strong> зохиодог. Текст, дүрс, товчлуур бүтцийг үүсгэдэг.</p>
+                            <div class="code-snippet">
+                                &lt;h1&gt;Сайн байна уу!&lt;/h1&gt;<br>
+                                &lt;button&gt;Асаалт&lt;/button&gt;
+                            </div>
+                        </div>
+
+                        <div class="tech-card">
+                            <div class="tech-icon">🎨</div>
+                            <h3>CSS</h3>
+                            <p class="tech-acronym">Cascading Style Sheets</p>
+                            <p>Энэ нь байшингийг <strong>өнгөлдөг</strong>. Өнгө, хэмжээ, байршлыг өөрчилдөг.</p>
+                            <div class="code-snippet">
+                                color: #FF69B4;<br>
+                                border-radius: 10px;
+                            </div>
+                        </div>
+
+                        <div class="tech-card">
+                            <div class="tech-icon">⚡</div>
+                            <h3>JavaScript</h3>
+                            <p class="tech-acronym">JS</p>
+                            <p>Энэ нь байшингийг <strong>идэвхтэй</strong> болгодог. Товчлуур дээр дарах зэргийг хүлээн авдаг.</p>
+                            <div class="code-snippet">
+                                button.onclick = () => {<br>
+                                &nbsp;&nbsp;alert('Санаа!');<br>
+                                };
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="analogy-box">
+                        <h4>🏠 Байшингийн жишээ:</h4>
+                        <p><strong>HTML</strong> = Байшингийн хүрээ ✓ <strong>CSS</strong> = Өнгө, сувиваа ✓ <strong>JavaScript</strong> = Гэрлийн сөнөө, цуметүүр</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Code -->
+        <section id="code" class="section section-4">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">💻 Code гэж юу вэ?</h2>
+                </div>
+                <div class="section-content">
+                    <div class="code-definition">
+                        <div class="card">
+                            <div class="card-icon">📖</div>
+                            <h3>Code нь компьютерийн хэл</h3>
+                            <p>Код нь компьютерийг яагаад ингэж хийх вэ гэж тэлмээлдэг санаа юм. Та англи хэлээр та ярилцах мэт, компьютерь код хэлээр ярилцана.</p>
+                        </div>
+                    </div>
+
+                    <div class="code-examples">
+                        <div class="example-card">
+                            <h4>Энгийн жишээ:</h4>
+                            <div class="code-block">
+                                <span class="code-keyword">if</span> (та надруу дарав) {<br>
+                                &nbsp;&nbsp;Намайг <span class="code-string">"Олроо!"</span> гэж хэлэх<br>
+                                }
+                            </div>
+                        </div>
+
+                        <div class="example-card">
+                            <h4>Бодит жишээ:</h4>
+                            <div class="code-block">
+                                &lt;button <span class="code-attr">onclick</span>=<span class="code-string">"sayHello()"</span>&gt;<br>
+                                &nbsp;&nbsp;Дарна уу!<br>
+                                &lt;/button&gt;
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="code-note">
+                        <p>💡 Кодыг идэвхтэй сурч, та web сайт үүсгэх чадвартай болно!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Vibe Coding -->
+        <section id="vibe" class="section section-5">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">🚀 Vibe Coding ойлголт</h2>
+                </div>
+                <div class="section-content">
+                    <div class="vibe-intro">
+                        <p>Vibe Coding нь <strong>AI-ийг ашигладаг</strong> шинэ технологи! Та зүгээр л <strong>гэнэ хэлэх</strong> үед AI автоматаар код үүсгэдэг.</p>
+                    </div>
+
+                    <div class="vibe-process">
+                        <div class="process-step">
+                            <div class="step-number">1</div>
+                            <div class="step-icon">💭</div>
+                            <h4>Санаа бичнэ</h4>
+                            <p>"Намайг цэнхэр товчлуур хэрэгтэй"</p>
+                        </div>
+
+                        <div class="process-arrow">→</div>
+
+                        <div class="process-step">
+                            <div class="step-number">2</div>
+                            <div class="step-icon">🤖</div>
+                            <h4>AI ойлгоно</h4>
+                            <p>AI та яагаад хэлсэнийг ойлгодог</p>
+                        </div>
+
+                        <div class="process-arrow">→</div>
+
+                        <div class="process-step">
+                            <div class="step-number">3</div>
+                            <div class="step-icon">⚡</div>
+                            <h4>Код болгоно</h4>
+                            <p>AI автоматаар код үүсгэдэг</p>
+                        </div>
+                    </div>
+
+                    <div class="vibe-example">
+                        <h4>🎯 Жишээ нь:</h4>
+                        <div class="example-flow">
+                            <div class="flow-box">
+                                <p><strong>Та:</strong> "Намайг яргалтай сүх хэрэгтэй"</p>
+                            </div>
+                            <div class="flow-arrow">🔄</div>
+                            <div class="flow-box">
+                                <p><strong>AI Үүсгэдэг:</strong></p>
+                                <code>&lt;button style=<br>"background: gold"&gt;<br>Сүх&lt;/button&gt;</code>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="vibe-benefits">
+                        <h4>✨ Vibe Coding-ийн давуу талууд:</h4>
+                        <ul>
+                            <li>🚀 Их удаан цаг ажилладаггүй</li>
+                            <li>🎨 Таны санаа сайхан кодоор болно</li>
+                            <li>📚 Сугалж сүрэлдээ кодыг сургалж чадна</li>
+                            <li>🌟 Гол зүйлдээ анхаарна, дэлгэрэнгүйд үгүй</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Flow Animation -->
+        <section id="flow" class="section section-6">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">🌀 Prompt → Code → Website Урсгал</h2>
+                </div>
+                <div class="section-content">
+                    <p class="flow-intro">Вэб сайт хэрхэн үүсгэгдэх ясыг энд үзье:</p>
+
+                    <div class="flow-animation">
+                        <div class="flow-step-large">
+                            <div class="flow-icon-large">💬</div>
+                            <h4>Prompt (Сөхөрүүлэлт)</h4>
+                            <p>Та AI-д: "Розовуу товчлуур нь хэрэгтэй"</p>
+                        </div>
+
+                        <div class="flow-line"></div>
+
+                        <div class="flow-step-large">
+                            <div class="flow-icon-large">⚙️</div>
+                            <h4>Code (Код)</h4>
+                            <p>AI үүсгэдэг:</p>
+                            <code class="code-box">
+&lt;button style="background: pink"&gt;
+  Намайг дарна уу
+&lt;/button&gt;
+                            </code>
+                        </div>
+
+                        <div class="flow-line"></div>
+
+                        <div class="flow-step-large">
+                            <div class="flow-icon-large">🌐</div>
+                            <h4>Website (Вэбсайт)</h4>
+                            <p>Браузер үзүүлэдэг:</p>
+                            <button class="preview-button">Намайг дарна уу</button>
+                        </div>
+                    </div>
+
+                    <div class="interactive-demo">
+                        <h4>🎮 Өөрөө туршиж үзээрэй:</h4>
+                        <div class="demo-input-group">
+                            <input type="text" id="promptInput" placeholder="Санаагаа бичнэ үү (жишээ: 'цэнхэр товчлуур')" class="demo-input">
+                            <button class="demo-button" onclick="generateFlow()">Үүсгэх ✨</button>
+                        </div>
+                        <div id="generatedCode" class="generated-code" style="display: none;">
+                            <h5>Үүсгэгдсэн код:</h5>
+                            <code id="codeOutput"></code>
+                            <h5>Үзүүлэх:</h5>
+                            <div id="preview" class="preview-area"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: QR Code -->
+        <section id="qr" class="section section-qr">
+            <div class="section-container qr-container">
+                <div class="qr-content">
+                    <h2 class="section-title">📱 Мобайл төхөөрөмжөөс нээх</h2>
+                    <p class="qr-instruction">Утсаараа QR код скан хийгээд энэ сайтыг цаашид нээ</p>
+                    <div class="qr-code-box">
+                        <div id="qrCodeContainer"></div>
+                    </div>
+                    <p class="qr-url">https://example.com/vibe-coding</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2026 Vibe Coding - Хүүхэлдэхүүнд зориулсан кодын сургалт</p>
+            <p>✨ Сурч, Үйлсэх, Үүсгэх ✨</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
