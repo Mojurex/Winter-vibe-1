@@ -140,11 +140,12 @@ document.querySelectorAll('.card, .tech-card, .process-step, .flow-step-large').
  */
 function generateQRCode() {
     const qrContainer = document.getElementById('qrCodeContainer');
-    const qrUrl = 'https://example.com/vibe-coding';
+    const qrUrl = 'https://winter-vibe-1.vercel.app';
     
     // Using QR Server API for free QR code generation
     const qrSize = 300;
-    const qrApiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=${qrSize}x${qrSize}&data=${encodeURIComponent(qrUrl)}`;
+    const encodedUrl = encodeURIComponent(qrUrl);
+    const qrApiUrl = 'https://api.qrserver.com/v1/create-qr-code/?size=' + qrSize + 'x' + qrSize + '&data=' + encodedUrl;
     
     const qrImage = document.createElement('img');
     qrImage.src = qrApiUrl;
@@ -153,29 +154,24 @@ function generateQRCode() {
     qrImage.style.height = 'auto';
     
     // Handle image load error (offline mode)
-    qrImage.addEventListener('error', () => {
-        qrContainer.innerHTML = `
-            <div style="
-                width: 300px;
-                height: 300px;
-                background: linear-gradient(45deg, #ddd 25%, transparent 25%, transparent 75%, #ddd 75%, #ddd),
-                            linear-gradient(45deg, #ddd 25%, transparent 25%, transparent 75%, #ddd 75%, #ddd);
-                background-size: 30px 30px;
-                background-position: 0 0, 15px 15px;
-                background-color: #f0f0f0;
-                border: 2px solid #ccc;
-                border-radius: 8px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: #666;
-                font-weight: bold;
-                text-align: center;
-                padding: 20px;
-            ">
-                QR Code<br>(offline mode)
-            </div>
-        `;
+    qrImage.addEventListener('error', function() {
+        const placeholder = document.createElement('div');
+        placeholder.style.width = '300px';
+        placeholder.style.height = '300px';
+        placeholder.style.background = '#f0f0f0';
+        placeholder.style.border = '2px solid #ccc';
+        placeholder.style.borderRadius = '8px';
+        placeholder.style.display = 'flex';
+        placeholder.style.alignItems = 'center';
+        placeholder.style.justifyContent = 'center';
+        placeholder.style.color = '#666';
+        placeholder.style.fontWeight = 'bold';
+        placeholder.style.textAlign = 'center';
+        placeholder.style.padding = '20px';
+        placeholder.textContent = 'QR Code (offline mode)';
+        
+        qrContainer.innerHTML = '';
+        qrContainer.appendChild(placeholder);
     });
     
     qrContainer.innerHTML = '';
