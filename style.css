@@ -198,10 +198,14 @@ body {
 
 /* ============= SECTIONS ============= */
 .section {
-    padding: 5rem 0;
+    padding: 4rem 0;
     scroll-margin-top: 100px;
     opacity: 0;
     animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.section-6 {
+    padding: 3rem 0;
 }
 
 .section:nth-child(1) { animation-delay: 0.1s; }
@@ -680,7 +684,7 @@ body {
     grid-column: 1 / -1;
     text-align: center;
     font-size: 1.1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .flow-animation {
@@ -696,8 +700,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
-    margin: 3rem auto;
+    gap: 1.5rem;
+    margin: 1.5rem auto 2rem;
     max-width: 900px;
 }
 
@@ -705,11 +709,11 @@ body {
     background: linear-gradient(135deg, rgba(255, 182, 217, 0.15), rgba(255, 255, 255, 0.95));
     border: 3px solid var(--color-accent);
     border-radius: var(--radius-lg);
-    padding: 3.5rem 3rem;
+    padding: 2.5rem 2.5rem;
     text-align: center;
     width: 100%;
     max-width: 650px;
-    min-height: 280px;
+    min-height: 240px;
     transition: var(--transition);
     box-shadow: 0 8px 30px rgba(255, 105, 180, 0.15);
     display: flex;
@@ -725,8 +729,8 @@ body {
 }
 
 .flow-icon-large {
-    font-size: 5.5rem;
-    margin-bottom: 1.5rem;
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
     display: block;
     animation: bounce 2s ease-in-out infinite;
 }
@@ -760,7 +764,7 @@ body {
 
 .flow-line {
     width: 4px;
-    height: 80px;
+    height: 50px;
     background: linear-gradient(180deg, var(--color-accent), var(--color-purple));
     animation: slideDown 1.5s ease-in-out infinite;
     border-radius: 10px;
