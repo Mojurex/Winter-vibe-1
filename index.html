@@ -250,7 +250,8 @@
                 <div class="section-content">
                     <div class="vibe-intro">
                         <p>Vibe Coding бол орчин үеийн, сонирхолтой арга юм. Чи санаагаа энгийн үгээр бичихэд,
-                            <strong>AI</strong> (хиймэл оюун ухаан) түүнийг код болгож өгдөг.</p>
+                            <strong>AI</strong> (хиймэл оюун ухаан) түүнийг код болгож өгдөг.
+                        </p>
                     </div>
 
                     <div class="vibe-process">
@@ -288,83 +289,70 @@
                             <p>Чи шууд үр дүнг харна</p>
                         </div>
                     </div>
-                    <h4>🎯 Жишээ нь:</h4>
-                    <div class="example-flow">
-                        <div class="flow-box">
-                            <p><strong>Та:</strong> "Надад шар товчлуур хэрэгтэй"</p>
+
+                    <div class="vibe-benefits">
+                        <h4>✨ Давуу талууд:</h4>
+                        <ul>
+                            <li>✨ Хурдан</li>
+                            <li>🚀 Санаа шууд бодит болдог</li>
+                            <li>📚 Кодыг харж сурах боломжтой</li>
+                            <li>🌟 Гол санаандаа төвлөрнө</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Flow -->
+        <section id="flow" class="section section-6">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">🚀 Prompt → Code → Website</h2>
+                </div>
+                <div class="section-content">
+                    <p class="flow-intro">Санаанаас вэб сайт хүртэлх аялал:</p>
+
+                    <div class="flow-visualization">
+                        <div class="flow-step-large">
+                            <div class="flow-icon-large">💭</div>
+                            <h4>Prompt (Санаа)</h4>
+                            <p>Чиний бичсэн хүсэл, санаа.</p>
                         </div>
-                        <div class="flow-arrow">🔄</div>
-                        <div class="flow-box">
-                            <div class="vibe-benefits">
-                                <h4>✨ Давуу талууд:</h4>
-                                <ul>
-                                    <li>✨ Хурдан</li>
-                                    <li>🚀 Санаа шууд бодит болдог</li>
-                                    <li>📚 Кодыг харж сурах боломжтой</li>
-                                    <li>🌟 Гол санаандаа төвлөрнө</li>
-                                </ul>
-                            </div>
-                            <ul>
-                                <li>🚀 Их удаан цаг ажилладаггүй</li>
-                                <li>🎨 Таны санаа сайхан кодоор болно</li>
-                                <li>📚 Сугалж сүрэлдээ кодыг сургалж чадна</li>
-                                <li>🌟 Гол зүйлдээ анхаарна, дэлгэрэнгүйд үгүй</li>
-                            </ul>
+
+                        <div class="flow-line"></div>
+
+                        <div class="flow-step-large">
+                            <div class="flow-icon-large">⚙️</div>
+                            <h4>Code (Код)</h4>
+                            <p>AI чиний санааг код болгон хувиргана.</p>
+                        </div>
+
+                        <div class="flow-line"></div>
+
+                        <div class="flow-step-large">
+                            <div class="flow-icon-large">🌐</div>
+                            <h4>Website (Сайт)</h4>
+                            <p>Код ажилласны дараа санаа чинь дэлгэц дээр бодит болж гарна!</p>
                         </div>
                     </div>
-                    <div class="section-header">
-                        <h2 class="section-title">🚀 Prompt → Code → Website</h2>
+
+                    <div class="interactive-demo">
+                        <h4>🎮 Өөрөө туршиж үз:</h4>
+                        <div class="demo-input-group">
+                            <input type="text" id="promptInput"
+                                placeholder="Санаагаа бичнэ үү (жишээ: 'цэнхэр товчлуур')"
+                                class="demo-input">
+                            <button class="demo-button" onclick="generateFlow()">Үүсгэх ✨</button>
+                        </div>
+                        <div id="generatedCode" class="generated-code" style="display: none;">
+                            <h5>Үүсгэгдсэн код:</h5>
+                            <code id="codeOutput"></code>
+                            <h5>Үзүүлэх:</h5>
+                            <div id="preview" class="preview-area"></div>
+                        </div>
                     </div>
-                    <div class="section-content">
-                        <p class="flow-intro">Санаанаас вэб сайт хүртэлх аялал:</p>
-                        <div class="section-container">
-                            <div class="section-header">
-                                <div class="flow-step-large">
-                                    <div class="flow-icon-large">💭</div>
-                                    <h4>Prompt (Санаа)</h4>
-                                    <p>Чиний бичсэн хүсэл, санаа.</p>
-                                </div>
-
-                                <div class="flow-line"></div>
-
-                                <div class="flow-step-large">
-                                    <div class="flow-icon-large">⚙️</div>
-                                    <h4>Code (Код)</h4>
-                                    <p>AI чиний санааг код болгон хувиргана.</p>
-                                </div>
-
-                                <div class="flow-line"></div>
-
-                                <div class="flow-step-large">
-                                    <div class="flow-icon-large">🌐</div>
-                                    <h4>Website (Сайт)</h4>
-                                    <p>Код ажилласны дараа санаа чинь дэлгэц дээр бодит болж гарна!</p>
-                                </div>
-                                <div class="flow-step-large">
-                                    <div class="flow-icon-large">🌐</div>
-                                    <h4>Website (Вэбсайт)</h4>
-                                    <p>Браузер үзүүлэдэг:</p>
-                                    <button class="preview-button">Намайг дарна уу</button>
-                                    <div class="interactive-demo">
-                                        <h4>🎮 Өөрөө туршиж үз:</h4>
-
-                                        <div class="interactive-demo">
-                                            <h4>🎮 Өөрөө туршиж үзээрэй:</h4>
-                                            <div class="demo-input-group">
-                                                <input type="text" id="promptInput"
-                                                    placeholder="Санаагаа бичнэ үү (жишээ: 'цэнхэр товчлуур')"
-                                                    class="demo-input">
-                                                <button class="demo-button" onclick="generateFlow()">Үүсгэх ✨</button>
-                                            </div>
-                                            <div id="generatedCode" class="generated-code" style="display: none;">
-                                                <h5>Үүсгэгдсэн код:</h5>
-                                                <code id="codeOutput"></code>
-                                                <h5>Үзүүлэх:</h5>
-                                                <div id="preview" class="preview-area"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                </div>
+            </div>
         </section>
 
         <!-- Section 7: QR Code -->
