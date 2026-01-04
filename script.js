@@ -389,16 +389,21 @@ window.addEventListener('scroll', () => {
  */
 const trackProgress = () => {
     const viewedSections = JSON.parse(localStorage.getItem('viewedSections')) || [];
-    const currentSection = document.querySelector('.section:in-viewport');
+    const sections = document.querySelectorAll('.section');
     
-    if (currentSection && !viewedSections.includes(currentSection.id)) {
-        viewedSections.push(currentSection.id);
-        localStorage.setItem('viewedSections', JSON.stringify(viewedSections));
-    }
+    sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        const isInViewport = rect.top >= 0 && rect.top <= window.innerHeight * 0.5;
+        
+        if (isInViewport && section.id && !viewedSections.includes(section.id)) {
+            viewedSections.push(section.id);
+            localStorage.setItem('viewedSections', JSON.stringify(viewedSections));
+        }
+    });
 };
 
 // Optional: Track progress periodically
-setInterval(trackProgress, 1000);
+setInterval(trackProgress, 2000);
 
 /**
  * Error Handling
