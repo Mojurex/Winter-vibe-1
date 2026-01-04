@@ -53,11 +53,12 @@ body {
 .header {
     position: sticky;
     top: 0;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    box-shadow: var(--shadow-soft);
+    background: linear-gradient(135deg, rgba(255, 182, 217, 0.95) 0%, rgba(255, 255, 255, 0.95) 50%, rgba(199, 125, 255, 0.85) 100%);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 4px 20px rgba(255, 105, 180, 0.15);
     z-index: 100;
     padding: 1rem 0;
+    border-bottom: 2px solid rgba(255, 182, 217, 0.3);
 }
 
 .header-content {
@@ -72,10 +73,24 @@ body {
 .logo {
     font-size: 2rem;
     font-weight: 700;
-    background: linear-gradient(135deg, var(--color-accent), var(--color-purple));
+    background: linear-gradient(135deg, var(--color-accent), var(--color-purple), var(--color-blue));
+    background-size: 200% 200%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    animation: gradientShift 3s ease infinite;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 .nav-menu {
@@ -88,16 +103,37 @@ body {
 .nav-link {
     color: var(--color-text);
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1rem;
-    padding: 0.6rem 1.2rem;
-    border-radius: var(--radius-md);
+    padding: 0.7rem 1.4rem;
+    border-radius: var(--radius-lg);
     transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--color-accent), var(--color-purple));
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+    border-radius: 2px;
 }
 
 .nav-link:hover {
-    background: var(--color-light-pink);
+    background: linear-gradient(135deg, var(--color-light-pink), rgba(199, 125, 255, 0.2));
     color: var(--color-accent);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 105, 180, 0.2);
+}
+
+.nav-link:hover::before {
+    width: 80%;
 }
 
 /* ============= HERO SECTION ============= */
@@ -1369,8 +1405,27 @@ body {
     }
 
     .header-content {
-        flex-wrap: wrap;
-        padding: 0.8rem;
+        flex-direction: column;
+        gap: 0.8rem;
+        padding: 1rem;
+    }
+
+    .logo {
+        font-size: 1.6rem;
+    }
+
+    .nav-menu {
+        width: 100%;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .nav-link {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+        flex: 1;
+        text-align: center;
+        min-width: 90px;
     }
 
     .code-block {
@@ -1399,5 +1454,21 @@ body {
     .vibe-benefits li {
         padding: 0.8rem;
         font-size: 0.9rem;
+    }
+
+    .logo {
+        font-size: 1.4rem;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+        gap: 0.4rem;
+    }
+
+    .nav-link {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.85rem;
+        flex: 1 1 45%;
+        min-width: 80px;
     }
 }
